@@ -1,0 +1,67 @@
+{
+  "name": "Nadiva's Estética e Insumos",
+  "short_name": "Nadiva's",
+  "description": "Centro de estética integral e insumos de belleza en Villa Del Dique",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#F9D5C5",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait",
+  "categories": ["beauty", "lifestyle", "shopping"],
+  "lang": "es-AR",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "iarc_rating_id": "",
+  "screenshots": [
+    {
+      "src": "/screenshot1.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/screenshot2.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver Servicios",
+      "short_name": "Servicios",
+      "description": "Explora nuestros servicios de belleza",
+      "url": "/#servicios",
+      "icons": [{ "src": "/services-icon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tienda de Insumos",
+      "short_name": "Tienda",
+      "description": "Visita nuestra tienda de productos de belleza",
+      "url": "/#tienda",
+      "icons": [{ "src": "/store-icon.png", "sizes": "192x192" }]
+    }
+  ]
+}
+
