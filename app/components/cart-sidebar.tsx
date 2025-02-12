@@ -43,7 +43,7 @@ ${items.map(item =>
 
 Total: ${formatPrice(total)}`
   
-    const whatsappUrl = `https://wa.me/5493546510458?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/543546452819?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
   }
 
