@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.nadivas.com.ar/sitemap.xml
+Sitemap: https://www.queenskin.com.ar/sitemap.xml
 
