@@ -6,8 +6,8 @@ import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    question: "¿Qué servicios ofrece Nadiva's?",
-    answer: "Nadiva's ofrece una amplia gama de servicios de estética y belleza, incluyendo tratamientos faciales, corporales, depilación, masajes, cuidado de uñas, y más. También contamos con una tienda de productos de belleza de alta calidad."
+    question: "¿Qué servicios ofrece Queen Skin Estética?",
+    answer: "Queen Skin Estetica ofrece una amplia gama de servicios de estética y belleza, incluyendo tratamientos faciales, corporales, depilación, masajes, cuidado de uñas, y más. También contamos con una tienda de productos de belleza de alta calidad."
   },
   {
     question: "¿Necesito hacer una cita previa?",
