@@ -10,7 +10,7 @@ export function Footer() {
           <div className="animate-fade-in">
             <Image
               src="/logo.png"
-              alt="Nadiva's Logo"
+              alt="Queen Skin Estetica Logo"
               width={150}
               height={150}
               className="mb-4"
@@ -46,16 +46,6 @@ export function Footer() {
                   <div>15:00 hs - 20:00 hs</div>
                 </div>
               </li>
-              <li className="flex items-center gap-2">
-                <Mail className="h-5 w-5 text-primary" />
-                <a href="mailto:info@nadivas.com" className="hover:text-primary transition-colors">
-                  info@nadivas.com
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <Clock className="h-5 w-5 text-primary" />
-                <span>Lunes a Sábado:9:00 hs - 12:30 hs 15:00 hs - 20:00 hs</span>
-              </li>
             </ul>
           </div>
           <div className="animate-fade-in" style={{animationDelay: '0.4s'}}>
@@ -77,12 +67,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/politica-privacidad" className="hover:text-primary transition-colors">
+                <Link href="#" className="hover:text-primary transition-colors">
                   Política de Privacidad
                 </Link>
               </li>
               <li>
-                <Link href="/terminos-condiciones" className="hover:text-primary transition-colors">
+                <Link href="#" className="hover:text-primary transition-colors">
                   Términos y Condiciones
                 </Link>
               </li>
@@ -92,7 +82,7 @@ export function Footer() {
             <h3 className="text-2xl font-semibold mb-4">Síguenos</h3>
             <div className="flex gap-4 mb-4">
               <a
-                href="https://m.facebook.com/@Nadivasok/?ref=xav_ig_profile_page&wtsid=rdr_0qlvH37LXnRUdD6GV&hr=1"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
@@ -101,7 +91,7 @@ export function Footer() {
                 <Facebook className="h-8 w-8" />
               </a>
               <a
-                href="https://www.instagram.com/nadivas_?igsh=aGxzdnRhZXJoZDFz"
+                href="https://www.instagram.com/queenskin.estetica"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
@@ -135,7 +125,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-white/10 text-center animate-fade-in" style={{animationDelay: '0.8s'}}>
-          <p>&copy; {new Date().getFullYear()} Nadiva's. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} QueenSkin Estética. Todos los derechos reservados.</p>
           <p className="mt-2 text-sm text-white/60">Diseñado y desarrollado por Duality Domain</p>
         </div>
       </div>
