@@ -31,7 +31,7 @@ export function TopBanner() {
           transition={{ duration: 0.5 }}
         >
           {promotions[currentPromotion]}
-          <a href="https://wa.me/5493546510458" className="ml-2 underline hover:text-white">
+          <a href="https://wa.me/5493546452819" className="ml-2 underline hover:text-white">
             Más info
           </a>
         </motion.p>
