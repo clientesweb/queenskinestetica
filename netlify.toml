@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = ".next"
+  command = "npm run build && npm run export"
+  publish = "out"  # Cambia ".next" por "out"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -8,9 +8,9 @@
 [build.environment]
   NEXT_USE_NETLIFY_EDGE = "true"
   NODE_VERSION = "18.17.0"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"  # Agregar esta línea
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
