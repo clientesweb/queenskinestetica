@@ -1,7 +1,7 @@
 {
-  "name": "Nadiva's Estética e Insumos",
-  "short_name": "Nadiva's",
-  "description": "Centro de estética integral e insumos de belleza en Villa Del Dique",
+  "name": "Queen Skin Estética",
+  "short_name": "Queen Skin",
+  "description": "Centro de estética integral y cuidado personal en Villa Del Dique",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
@@ -40,10 +40,10 @@
       "density": "4.0"
     }
   ],
-  "theme_color": "#F9D5C5",
+  "theme_color": "#D53F8C",
   "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": "https://www.nadivas.com.ar/",
+  "start_url": "https://www.queenskin.com.ar/",
   "orientation": "portrait"
 }
 
