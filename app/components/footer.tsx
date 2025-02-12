@@ -16,21 +16,35 @@ export function Footer() {
               className="mb-4"
             />
             <p className="text-sm mt-4">
-              En Nadiva's, nos dedicamos a realzar tu belleza natural y bienestar. Nuestro compromiso es ofrecerte servicios de alta calidad y productos premium para que te sientas y te veas radiante.
+              En Queen Skin Estética, nos dedicamos a realzar tu belleza natural y bienestar. Nuestro compromiso es
+              ofrecerte servicios de alta calidad y productos premium para que te sientas y te veas radiante.
             </p>
           </div>
-          <div className="animate-fade-in" style={{animationDelay: '0.2s'}}>
+          <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <h3 className="text-2xl font-semibold mb-4">Contacto</h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span>San Martín 201, Villa Del Dique, Cordoba</span>
+                <span>Av. San Martin 363, Villa Del Dique, Córdoba</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-primary" />
-                <a href="tel:+5493546510458" className="hover:text-primary transition-colors">
-                  +54 9 3546 51-0458
-                </a>
+                <div className="flex flex-col">
+                  <a href="tel:+5493546452819" className="hover:text-primary transition-colors">
+                    Maia: +54 9 3546 45-2819
+                  </a>
+                  <a href="tel:+5493546409035" className="hover:text-primary transition-colors">
+                    Jesi: +54 9 3546 40-9035
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <Clock className="h-5 w-5 text-primary" />
+                <div>
+                  <div>Lunes a Sábado:</div>
+                  <div>9:00 hs - 12:30 hs</div>
+                  <div>15:00 hs - 20:00 hs</div>
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary" />
@@ -40,7 +54,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Clock className="h-5 w-5 text-primary" />
-                <span>Lun - Sáb: 9:00 AM - 6:00 PM</span>
+                <span>Lunes a Sábado:9:00 hs - 12:30 hs 15:00 hs - 20:00 hs</span>
               </li>
             </ul>
           </div>
