@@ -21,7 +21,7 @@ class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-          <meta name="msapplication-TileColor" content="#F9D5C5" />
+          <meta name="msapplication-TileColor" content="#D53F8C" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         </Head>
         <body>
