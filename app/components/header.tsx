@@ -31,7 +31,7 @@ export function Header() {
             <Facebook className="h-6 w-6" />
           </a>
           <a
-            href="https://www.instagram.com/nadivas_?igsh=aGxzdnRhZXJoZDFz"
+            href="https://www.instagram.com/queenskin.estetica"
             target="_blank"
             rel="noopener noreferrer"
             className="text-secondary hover:text-primary transition-colors"
@@ -42,11 +42,11 @@ export function Header() {
 
         <div className="flex justify-center flex-grow">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Nadiva's</span>
+            <span className="sr-only">Queen Skin Estética</span>
             <Image
               className="h-16 w-auto"
               src="/logo.png"
-              alt="Nadiva's Logo"
+              alt="Queen Skin Estetica Logo"
               width={240}
               height={64}
               priority
@@ -83,11 +83,11 @@ export function Header() {
             >
               <div className="flex items-center justify-between">
                 <Link href="/" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Nadiva's</span>
+                  <span className="sr-only">Queen Skin Estetica</span>
                   <Image
                     className="h-12 w-auto"
                     src="/logo.png"
-                    alt="Nadiva's Logo"
+                    alt="Queen Skin Estetica Logo"
                     width={180}
                     height={48}
                   />
