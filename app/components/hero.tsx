@@ -91,7 +91,7 @@ export function Hero() {
             variant="outline"
             className="bg-transparent border-white text-white hover:bg-white/20 text-lg px-8 py-6"
           >
-            <a href="https://wa.me/5493546510458" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5493546452819" target="_blank" rel="noopener noreferrer">
               Contáctanos
             </a>
           </Button>
