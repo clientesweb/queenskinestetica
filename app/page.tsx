@@ -12,7 +12,7 @@ import { Preloader } from "../app/components/preloader"
 import { AdBanner } from "../app/components/ad-banner"
 import { InstagramReels } from "../app/components/instagram-reels"
 import { FAQ } from "../app/components/faq"
-import type { CartItem } from "../app/types/cart"
+import type { CartItem } from "@/types/cart"
 
 export default function Home() {
   const [cartItems, setCartItems] = useState<CartItem[]>([])
