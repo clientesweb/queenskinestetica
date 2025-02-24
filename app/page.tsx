@@ -11,8 +11,8 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Preloader } from "@/components/preloader"
 import { AdBanner } from "@/components/ad-banner"
 import { InstagramReels } from "@/components/instagram-reels"
-import type { CartItem } from "@/types/cart"
 import { FAQ } from "@/components/faq"
+import type { CartItem } from "@/types/cart"
 
 export default function Home() {
   const [cartItems, setCartItems] = useState<CartItem[]>([])
