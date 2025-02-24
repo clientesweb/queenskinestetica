@@ -17,29 +17,30 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Nadiva's Estética e Insumos",
-    template: "%s | Nadiva's Estética e Insumos",
+    default: "Queen Skin Estética - Belleza y Cuidado Personal",
+    template: "%s | Queen Skin Estética",
   },
   description:
-    "Centro de estética integral e insumos de belleza en Villa Del Dique, Córdoba. Ofrecemos tratamientos faciales, corporales, depilación, y más.",
+    "Centro de estética integral y cuidado personal en Villa Del Dique, Córdoba. Ofrecemos tratamientos faciales, corporales, y servicios de belleza profesionales.",
   keywords: [
     "estética",
     "belleza",
     "tratamientos faciales",
     "tratamientos corporales",
-    "depilación",
+    "cuidado personal",
     "Villa Del Dique",
     "Córdoba",
+    "Queen Skin",
   ],
-  authors: [{ name: "Nadiva's", url: "https://www.nadivas.com.ar" }],
-  creator: "Nadiva's",
-  publisher: "Nadiva's",
+  authors: [{ name: "Queen Skin", url: "https://www.queenskin.com.ar" }],
+  creator: "Queen Skin",
+  publisher: "Queen Skin",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.nadivas.com.ar"),
+  metadataBase: new URL("https://www.queenskin.com.ar"),
   alternates: {
     canonical: "/",
   },
@@ -81,38 +82,34 @@ export const metadata: Metadata = {
     maximumScale: 1,
   },
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F9D5C5" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f172a" },
+    { media: "(prefers-color-scheme: light)", color: "#D53F8C" },
+    { media: "(prefers-color-scheme: dark)", color: "#97266D" },
   ],
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.nadivas.com.ar/",
-    siteName: "Nadiva's Estética e Insumos",
-    title: "Nadiva's Estética e Insumos - Belleza y Bienestar en Villa Del Dique",
+    url: "https://www.queenskin.com.ar/",
+    siteName: "Queen Skin Estética",
+    title: "Queen Skin Estética - Belleza y Cuidado Personal en Villa Del Dique",
     description:
-      "Centro de estética integral e insumos de belleza en Villa Del Dique. Tratamientos faciales, corporales, depilación, y productos de calidad.",
+      "Centro de estética integral y cuidado personal en Villa Del Dique. Tratamientos faciales, corporales, y servicios de belleza profesionales.",
     images: [
       {
-        url: "https://www.nadivas.com.ar/og-image.jpg",
+        url: "https://www.queenskin.com.ar/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Nadiva's Estética e Insumos - Servicios de belleza y bienestar",
+        alt: "Queen Skin Estética - Servicios de belleza y bienestar",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nadiva's Estética e Insumos - Belleza y Bienestar",
+    title: "Queen Skin Estética - Belleza y Cuidado Personal",
     description:
-      "Centro de estética integral e insumos de belleza en Villa Del Dique. Descubre nuestros tratamientos y productos.",
-    images: ["https://www.nadivas.com.ar/twitter-image.jpg"],
-    creator: "@nadivas",
-    site: "@nadivas",
-  },
-  other: {
-    "msapplication-TileColor": "#F9D5C5",
-    "msapplication-TileImage": "/ms-icon-144x144.png",
+      "Centro de estética integral y cuidado personal en Villa Del Dique. Descubre nuestros tratamientos y servicios.",
+    images: ["https://www.queenskin.com.ar/twitter-image.jpg"],
+    creator: "@queenskin",
+    site: "@queenskin",
   },
 }
 
@@ -135,16 +132,17 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BeautySalon",
-              name: "Nadiva's Estética e Insumos",
-              image: "https://www.nadivas.com.ar/logo.png",
-              url: "https://www.nadivas.com.ar",
-              telephone: "+5493546510458",
+              name: "Queen Skin Estética",
+              image: "https://www.queenskin.com.ar/logo.png",
+              "@id": "https://www.queenskin.com.ar",
+              url: "https://www.queenskin.com.ar",
+              telephone: "+5493546452819",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "San Martín 201",
+                streetAddress: "Av. San Martin 363",
                 addressLocality: "Villa Del Dique",
                 addressRegion: "Córdoba",
-                postalCode: "5862",
+                postalCode: "X5862",
                 addressCountry: "AR",
               },
               geo: {
@@ -156,11 +154,11 @@ export default function RootLayout({
                 {
                   "@type": "OpeningHoursSpecification",
                   dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-                  opens: "09:00",
-                  closes: "19:00",
+                  opens: ["09:00", "15:00"],
+                  closes: ["12:30", "20:00"],
                 },
               ],
-              sameAs: ["https://www.facebook.com/Nadivasok", "https://www.instagram.com/nadivas_"],
+              sameAs: ["https://www.instagram.com/queenskin.estetica"],
             }),
           }}
         />
@@ -168,4 +166,3 @@ export default function RootLayout({
     </html>
   )
 }
-
