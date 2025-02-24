@@ -1,52 +1,58 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
+import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import { ChevronDown } from "lucide-react"
 
 const faqs = [
   {
-    question: "¿Qué servicios ofrece Queen Skin Estética?",
-    answer: "Queen Skin Estetica ofrece una amplia gama de servicios de estética y belleza, incluyendo tratamientos faciales, corporales, depilación, masajes, cuidado de uñas, y más. También contamos con una tienda de productos de belleza de alta calidad."
+    question: "¿Qué servicios ofrece Duality Domain?",
+    answer:
+      "Ofrecemos servicios integrales de desarrollo web, incluyendo diseño UI/UX, desarrollo frontend y backend, optimización SEO, y soluciones de comercio electrónico personalizadas.",
   },
   {
-    question: "¿Necesito hacer una cita previa?",
-    answer: "Sí, recomendamos hacer una cita previa para garantizar la disponibilidad y ofrecerte el mejor servicio posible. Puedes reservar tu cita llamando a nuestro número de teléfono o a través de nuestras redes sociales."
+    question: "¿Cómo puedo solicitar una cotización?",
+    answer:
+      "Puedes contactarnos a través del botón de WhatsApp o completando el formulario de contacto. Nos pondremos en contacto contigo para discutir tu proyecto y proporcionar una cotización detallada.",
   },
   {
-    question: "¿Qué métodos de pago aceptan?",
-    answer: "Aceptamos efectivo, tarjetas de crédito y débito (Visa y Mastercard), y también MercadoPago para tu comodidad."
+    question: "¿Cuál es el tiempo promedio de desarrollo?",
+    answer:
+      "El tiempo de desarrollo varía según la complejidad del proyecto. Típicamente, un sitio web básico puede estar listo en 2-3 semanas, mientras que proyectos más complejos pueden tomar 1-3 meses.",
   },
   {
-    question: "¿Ofrecen descuentos o promociones?",
-    answer: "Sí, regularmente ofrecemos promociones especiales y paquetes de tratamientos. Te recomendamos seguirnos en nuestras redes sociales o suscribirte a nuestro boletín para estar al tanto de las últimas ofertas."
+    question: "¿Ofrecen mantenimiento post-desarrollo?",
+    answer:
+      "Sí, ofrecemos servicios de mantenimiento y soporte continuo para asegurar que tu sitio web funcione de manera óptima. Esto incluye actualizaciones de seguridad, respaldos y modificaciones menores.",
   },
   {
-    question: "¿Cuál es su política de cancelación?",
-    answer: "Agradecemos que nos notifiques con al menos 24 horas de anticipación si necesitas cancelar o reprogramar tu cita. Esto nos permite ofrecer el espacio a otros clientes y mantener un servicio eficiente."
+    question: "¿Qué tecnologías utilizan?",
+    answer:
+      "Trabajamos con las últimas tecnologías web, incluyendo React, Next.js, Node.js, y otras herramientas modernas de desarrollo. Nos mantenemos actualizados con las mejores prácticas de la industria.",
   },
   {
-    question: "¿Venden productos para el cuidado en casa?",
-    answer: "Sí, contamos con una selección de productos profesionales para el cuidado de la piel y el cabello que puedes usar en casa. Nuestro equipo estará encantado de recomendarte los productos más adecuados para tu rutina de belleza."
-  }
+    question: "¿Ofrecen servicios de hosting?",
+    answer:
+      "Sí, podemos ayudarte con el hosting de tu sitio web. Trabajamos con proveedores confiables y ofrecemos soluciones de hosting optimizadas para el rendimiento y la seguridad.",
+  },
 ]
 
 export function FAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   return (
-    <section id="faq" className="py-24 bg-gradient-to-b from-accent to-background">
+    <section id="faq" className="py-24 bg-gradient-to-b from-background to-background/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <motion.h2 
-            className="text-4xl font-bold tracking-tight sm:text-5xl mb-4 font-serif text-secondary"
+          <motion.h2
+            className="text-4xl font-bold tracking-tight sm:text-5xl mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             Preguntas Frecuentes
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,9 +61,10 @@ export function FAQ() {
             Encuentra respuestas a las preguntas más comunes sobre nuestros servicios
           </motion.p>
         </div>
+
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className="mb-4"
               initial={{ opacity: 0, y: 20 }}
@@ -65,31 +72,59 @@ export function FAQ() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <button
-                className="flex justify-between items-center w-full text-left p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200"
+                className="flex justify-between items-center w-full text-left p-4 rounded-lg bg-secondary/5 hover:bg-secondary/10 transition-colors duration-200"
                 onClick={() => setActiveIndex(activeIndex === index ? null : index)}
               >
-                <span className="text-lg font-semibold text-secondary">{faq.question}</span>
-                <ChevronDown 
-                  className={`w-5 h-5 text-primary transition-transform duration-200 ${activeIndex === index ? 'transform rotate-180' : ''}`}
-                />
+                <span className="text-lg font-semibold text-primary">{faq.question}</span>
+                <motion.div animate={{ rotate: activeIndex === index ? 180 : 0 }} transition={{ duration: 0.3 }}>
+                  <ChevronDown className="w-5 h-5 text-secondary" />
+                </motion.div>
               </button>
+
               <AnimatePresence>
                 {activeIndex === index && (
                   <motion.div
                     initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
+                    animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <p className="p-4 bg-muted text-muted-foreground rounded-b-lg">
-                      {faq.answer}
-                    </p>
+                    <div className="p-4 bg-secondary/5 text-secondary/80 rounded-b-lg">{faq.answer}</div>
                   </motion.div>
                 )}
               </AnimatePresence>
             </motion.div>
           ))}
+        </div>
+
+        {/* Elementos decorativos */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <motion.div
+            className="absolute top-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl"
+            animate={{
+              x: [0, 100, 0],
+              y: [0, 50, 0],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute bottom-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"
+            animate={{
+              x: [0, -100, 0],
+              y: [0, -50, 0],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "easeInOut",
+              delay: 1,
+            }}
+          />
         </div>
       </div>
     </section>
